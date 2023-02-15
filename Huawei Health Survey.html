@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Huawei Health Survey</title>
+  <link rel="stylesheet" href="huaweihealthsurvey.css" />
+  </head>
+  <body>
+    <h1 id ="title">Huawei Health Survey</h1>
+    <p id="description">Please fill out this quick survey to help us improve user experience.</p>
+    <form id="survey-form">
+      <fieldset>
+     <label for="name" id="name-label"> Name
+<input id="name" name="name" placeholder="Enter your name" type="text" required />
+</label>
+<label for="email" id="email-label"> Email
+<input id="email" name="email" placeholder="Enter your email" type="email" required/>
+</label>
+<label for="number" id="number-label"> Age
+<input id="number" name="number" placeholder="Enter your age" type="number" min="13" max="120"/>
+</label>
+<fieldset>
+  <label>Are you male or female?</label>
+  <label for="male">
+    <input class="inline" id="male" name="sex" type="radio" value="male" /> Male
+  </label>
+  <label for="female">
+    <input class="inline" id="female" name="sex" type="radio" value="female"/> Female
+  </label>
+</fieldset>
+<fieldset>
+<label for="diet preference">What is your diet preference?
+  <select id="dropdown" name="dropdown">
+    <option value="">Please select one</option>
+    <option value="1">Vegan</option>
+    <option value="2">Lacto-Ovo vegetarian</option>
+    <option value="3">Lacto-vegetarian</option>
+    <option value="4">Ovo-vegetarian</ovo>
+    <option value="5">Pescatarian</option>
+    <option value="6">Flexitarian</option>
+  </select>
+</label>
+</fieldset>
+<fieldset>
+  <label>What is your ethnicity?</label>
+<label for="ethnicity"><input class="inline" for="ethnicity" type="checkbox" value="checkbox"/>Asian-American</label>
+<label for="ethnicity"><input class="inline" for="ethnicity" type="checkbox" value="checkbox"/>African-American</label>
+<label for="ethnicity"><input class="inline" for="ethnicity" type="checkbox" value="checkbox"/>Caucasion</label>
+<label for="ethnicity"><input class="inline" for="ethnicity" type="checkbox" value="checkbox"/>Other</label>
+</fieldset>
+<fieldset>
+  <label for="bio">Please tell us more about yourself.<textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like running every day..."></textarea>
+    </label>
+  </fieldset>
+<input for="submit" id="submit" type="submit" value="submit"/>
+      </form>
+    </body>
+</html>
